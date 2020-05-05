@@ -8,10 +8,7 @@ import com.company.project.*
 
 def util = new com.company.project.util()
 
-
-
-
-def notifySuccess() {
+/*def notifySuccess() {
 		emailext (
 			subject: "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
 			body: '${JELLY_SCRIPT, template="html"}',
@@ -45,7 +42,7 @@ def notifySuccess() {
 			replyTo: "vallab.v@gmail.com",
 			//recipientProviders: [[$class: 'DevelopersRecipientProvider']]
 		)
-	}
+	}  */
 
 
 node {
