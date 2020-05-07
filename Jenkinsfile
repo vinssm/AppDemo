@@ -64,7 +64,7 @@ pipeline {
 						script {
 							deleteDir()
 							checkOutScm()
-							bat 'git clone "https://github.com/vinssm/AppDemo/tree/master/CommonRepo/src/com/company/project"'
+							bat 'git clone "https://github.com/vinssm/CommonRepo.git"'
 						}
                    }
               }
