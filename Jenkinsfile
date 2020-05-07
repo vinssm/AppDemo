@@ -71,6 +71,8 @@ pipeline {
 
 	}
 
+}
+
 	/* stage('Build the source code') {
             steps {
 		script {
@@ -80,34 +82,39 @@ pipeline {
 
 		}
 		}
-		}
+		}   */
 
-	    stage ('Run the Unit Tests') {
+
+
+	  /*  stage ('Run the Unit Tests') {
 	    	steps {
 	    		script {
 			        print "Executing the unit tests ... "
 		     		util.executeUnitTests() 
 			    }
 	        }
-	    }
+	    }   */
 
-	    stage ('Upload to Artifactory') {
+	   /* stage ('Upload to Artifactory') {
 	    	steps {
 	    		script {
 			        print "artifactory"
 		     		util.uploadToArtifactory() 
 			    }
 	        }
-	    }
-        stage('Deploy to Servers') {
+	    }   */
+
+
+      /*  stage('Deploy to Servers') {
             steps {
 	    		script {
 		     		util.deploy() 
 	        	}
             }
-        }
+        } 
+} */
 
-}
+/*
 	post {
         failure {
         	script {
@@ -116,4 +123,4 @@ pipeline {
         }
     }
 }
-	} */
+	}  */
