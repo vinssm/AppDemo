@@ -52,7 +52,7 @@ def util = new com.company.project.util()
 
 
 pipeline {
-    agent any
+    agent none
 
     stages {
         stage('Checkout') {
