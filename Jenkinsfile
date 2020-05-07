@@ -73,9 +73,9 @@ pipeline {
 	    }
 
     }
-	
 
-	/* stage('Build the source code') {
+
+	stage('Build the source code') {
             steps {
 		script {
 		     echo "Building the source code  ... "
@@ -84,7 +84,7 @@ pipeline {
 
 		}
 		}
-		}   */
+		}   
 
 
 
