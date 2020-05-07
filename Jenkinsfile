@@ -45,10 +45,10 @@ def util = new com.company.project.util()
 	}  */
 
 
-node {
+/* node {
        checkout scm
 	data = readYaml file: 'input.yaml'
-     }
+     } */
 
 
 pipeline {
