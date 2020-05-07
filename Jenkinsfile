@@ -64,7 +64,7 @@ pipeline {
 				steps {
 						script {
 							deleteDir()
-							checkOutScm()
+							checkOut Scm
 							bat 'git clone "https://github.com/vinssm/CommonRepo.git"'
 						}
                    }
