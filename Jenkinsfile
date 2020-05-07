@@ -53,15 +53,25 @@ def util = new com.company.project.util()
 
 pipeline {
     agent none
+	 options {
+		 skipDefaultCheckout() // Don't checout automatically
+		}
 
     stages {
-        stage('Checkout') {
-            steps {
-                checkout scm 
-            }
+        stage('Build Preparation') {
+            agent { label "${AgentName}"  }
+				steps {
+						script {
+							deleteDir()
+							checkOutScm()
+							bat 'git clone "https://github.com/vinssm/AppDemo/tree/master/CommonRepo/src/com/company/project"'
+						}
+               }
         }
 
-	stage('Build the source code') {
+	}
+
+	/* stage('Build the source code') {
             steps {
 		script {
 		     echo "Building the source code  ... "
@@ -106,4 +116,4 @@ pipeline {
         }
     }
 }
-	}
+	} */
