@@ -4,9 +4,10 @@
 @Library('jenkins-global-lib') _
 
 import com.company.project.*
-	deliveryPipeline{
-
 def util = new com.company.project.util()
+
+def AgentName='Windows_10_Agent'
+def anyBuildFailed='false'
 
 /*def notifySuccess() {
 		emailext (
@@ -72,8 +73,7 @@ pipeline {
 	    }
 
     }
-
-}
+	
 
 	/* stage('Build the source code') {
             steps {
