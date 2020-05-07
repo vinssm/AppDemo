@@ -75,16 +75,14 @@ pipeline {
     }
 
 
-	stage('Build the source code') {
-            steps {
-		script {
-		     echo "Building the source code  ... "
-		     util.buildSourceCode(data.App.name, data.App.name2.prop3, data.App.name2.prop4) 
-		     commitMessage = util.getCommitMessage()
-
+	stage('Build') {
+        agent { label "${AgentName}"  }
+			steps {
+				script {
+					Component_details = readYaml file: 'CS\\inputs.yaml'
+			}
 		}
-		}
-		}   
+	}   
 
 
 
