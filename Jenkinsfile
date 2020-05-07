@@ -114,8 +114,8 @@ pipeline {
         } 
 } */
 
-/*
-	post {
+
+/*	post {
         failure {
         	script {
         		notifyFailure()
@@ -123,4 +123,5 @@ pipeline {
         }
     }
 }
-	}  */
+
+  */
