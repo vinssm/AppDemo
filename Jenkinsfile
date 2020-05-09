@@ -72,7 +72,7 @@ pipeline {
 
 	    }
 
-    }
+
 
 
 	stage('Build') {
@@ -82,11 +82,12 @@ pipeline {
 					Component_details = readYaml file: 'NewSampleApplication\\inputs.yaml'
 			}
 		}
-	}   
+	}
+}
 
 
 
-	  /*  stage ('Run the Unit Tests') {
+	  /*  stage('Run the Unit Tests') {
 	    	steps {
 	    		script {
 			        print "Executing the unit tests ... "
