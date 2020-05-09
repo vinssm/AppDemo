@@ -79,8 +79,8 @@ pipeline {
 					env.AssemblyVersioning = "${Component_details.App.AssemblyPath}"
 					for (String item_entry : AssemblyVersioning.split() ) {
 						env.AssemblyVersioning=item_entry
-						echo "##### $(BUILD_NUMBER)  ######################"
-						echo "##### $(WORKSPACE)  ######################"
+						echo "##### ${BUILD_NUMBER}  ######################"
+						echo "##### ${WORKSPACE}  ######################"
 					}
 					
 				}
