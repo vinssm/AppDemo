@@ -81,6 +81,8 @@ pipeline {
 						env.AssemblyVersioning=item_entry
 						echo "##### ${BUILD_NUMBER}  ######################"
 						echo "##### ${WORKSPACE}  ######################"
+						echo "##### ${AssemblyVersioning}  ######################"
+						echo "##### ${CommitNumber}  ######################"
 					}
 					
 				}
