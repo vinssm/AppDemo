@@ -76,7 +76,13 @@ pipeline {
 			steps {
 				script {
 					Component_details = readYaml file: 'NewSampleApplication\\input.yaml'
-					echo "##### $(BUILD_NUMBER)  ######################"
+					env.AssemblyVersioning = "${Component_details.App.AssemblyPath}"
+					for (String item_entry : AssemblyVersioning.split() ) {
+						env.AssemblyVersioning=item_entry
+						echo "##### $(BUILD_NUMBER)  ######################"
+						echo "##### $(WORKSPACE)  ######################"
+					}
+					
 				}
 			}
 		}
