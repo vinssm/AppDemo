@@ -72,11 +72,8 @@ pipeline {
 
 	    }
 
-
-
-
 	stage('Build') {
-        //agent { label "${AgentName}"  }
+        agent { label "${AgentName}"  }
 			steps {
 				script {
 					Component_details = readYaml file: 'NewSampleApplication\\inputs.yaml'
