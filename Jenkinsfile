@@ -76,6 +76,7 @@ pipeline {
 			steps {
 				script {
 					Component_details = readYaml file: 'NewSampleApplication\\inputs.yaml'
+				}
 			}
 		}
 	}
@@ -109,7 +110,7 @@ pipeline {
 	        	}
             }
         } 
-} */
+} 
 
 
 /*	post {
