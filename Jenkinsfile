@@ -71,8 +71,6 @@ pipeline {
                    }
               }
 
-	    }
-
 	stage('Build') {
         //agent { label "${AgentName}"  }
 			steps {
