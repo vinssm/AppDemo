@@ -65,6 +65,7 @@ pipeline {
 						script {
 							deleteDir()
 							checkout scm
+							echo "Checkout is complete"
 							bat 'git clone "https://github.com/vinssm/CommonRepo.git"'
 						}
                    }
@@ -73,7 +74,7 @@ pipeline {
 	    }
 
 	stage('Build') {
-        agent { label "${AgentName}"  }
+        //agent { label "${AgentName}"  }
 			steps {
 				script {
 					Component_details = readYaml file: 'NewSampleApplication\\inputs.yaml'
