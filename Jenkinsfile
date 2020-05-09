@@ -76,6 +76,7 @@ pipeline {
 			steps {
 				script {
 					Component_details = readYaml file: 'NewSampleApplication\\input.yaml'
+					echo "##### $(BUILD_NUMBER)  ######################"
 				}
 			}
 		}
