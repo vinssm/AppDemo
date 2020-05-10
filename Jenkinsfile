@@ -86,6 +86,7 @@ pipeline {
 						echo "##### ${AssemblyVersioning}  ######################"
 						echo "##### ${GIT_COMMIT}  ######################"
 						echo "##### ${GIT_BRANCH}  ######################"
+						echo "##### ${project_file}  ######################"
 						
 					}
 					
