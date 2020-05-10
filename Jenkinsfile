@@ -94,7 +94,7 @@ pipeline {
 					env.project_file=item
 					echo "##### ${project_file} : Build is happening for this CPROJ file"
 					util.build (WORKSPACE,project_file)
-					}
+					//}
 				}
 			}
 		}
