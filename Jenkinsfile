@@ -78,6 +78,7 @@ pipeline {
 					Component_details = readYaml file: 'NewSampleApplication\\input.yaml'
 					env.AssemblyVersioning = "${Component_details.App.AssemblyPath}"
 					GIT_COMMIT  =  "${env.GIT_COMMIT}"
+					GIT_BRANCH  =  "${env.GIT_BRANCH}"
 					for (String item_entry : AssemblyVersioning.split() ) {
 						env.AssemblyVersioning=item_entry
 						echo "##### ${BUILD_NUMBER}  ######################"
