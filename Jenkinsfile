@@ -91,8 +91,8 @@ pipeline {
 					
 					env.build_file = "${Component_details.App.project_file}"
 					//for (String item : build_file.split() ) {
-					//env.project_file=item
 					project_file = "${env.project_file}"
+					env.project_file=item
 					echo "##### ${project_file} : Build is happening for this CPROJ file"
 					util.build (WORKSPACE,project_file)
 					//}
