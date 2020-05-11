@@ -86,8 +86,8 @@ pipeline {
 						echo "##### ${BUILD_NUMBER}  ######################"
 						echo "##### ${WORKSPACE}     ######################"
 						echo "##### ${project_file}  ######################"
-						
-					//}
+					util.build(WORKSPACE,project_file)
+					
 
 				}
 			}
