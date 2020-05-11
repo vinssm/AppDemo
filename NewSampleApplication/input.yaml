@@ -5,9 +5,9 @@ App:
   solution_file: 'C:\Program Files (x86)\Jenkins\workspace\AppDemo\NewSampleApplication\WebApplication1\WebApplication1.sln'
   project_file: 'C:\Program Files (x86)\Jenkins\workspace\AppDemo\WebApplication1.sln'
   app_dir: 'C:\Program Files (x86)\Jenkins\workspace\AppDemo\NewSampleApplication\WebApplication1'
-  name1:
-    prop1: prop1
-    prop2: prop2
-  name2:
-    prop3: prop3
-    prop4: prop4
+#  name1:
+ #   prop1: prop1
+  #  prop2: prop2
+  #name2:
+   # prop3: prop3
+    #prop4: prop4
