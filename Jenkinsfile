@@ -76,27 +76,18 @@ pipeline {
 			steps {
 				script {
 					Component_details = readYaml file: 'NewSampleApplication\\input.yaml'
-					env.AssemblyVersioning = "${Component_details.App.AssemblyPath}"
-					GIT_COMMIT  =  "${env.GIT_COMMIT}"
-					GIT_BRANCH  =  "${env.GIT_BRANCH}"
-					for (String item_entry : AssemblyVersioning.split() ) {
-						env.AssemblyVersioning=item_entry
+					env.AppName= "${Component_details.App.App_name}"
+					env.component_name= "${Component_details.App.comp_name}"
+					env.build_file= "${Component_details.App.project_file}"
+					for (String item : build_file.split() ) {
+						env.project_file=item
 						echo "##### ${BUILD_NUMBER}  ######################"
-						echo "##### ${WORKSPACE}  ######################"
-						echo "##### ${AssemblyVersioning}  ######################"
-						echo "##### ${GIT_COMMIT}  ######################"
-						echo "##### ${GIT_BRANCH}  ######################"
+						echo "##### ${WORKSPACE}     ######################"
+						echo "##### ${project_file}  ######################"
+						echo "##### ${CommitNumber}  ######################"
 						
 					}
-					
-					env.build_file = "${Component_details.App.project_file}"
-					for (String item : build_file.split() ) {
-					env.project_file=item
-					echo "${AppName}" 
-					echo "${component_name}" 
-					echo "##### ${project_file} Build is happening for this CPROJ file"
-					//util.build (WORKSPACE,project_file)
-					}
+
 				}
 			}
 		}
