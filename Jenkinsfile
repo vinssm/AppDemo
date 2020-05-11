@@ -77,7 +77,7 @@ pipeline {
 				script {
 					Component_details = readYaml file: 'NewSampleApplication\\input.yaml'
 					env.AppName= "${Component_details.App.App_name}"
-					env.Comp_name= "${Component_details.App.Component_name}"
+					env.CompName= "${Component_details.App.Comp_name}"
 					env.build_file= "${Component_details.App.project_file}"
 					for (String item : build_file.split() ) {
 						env.project_file=item
