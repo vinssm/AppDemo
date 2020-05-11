@@ -82,7 +82,7 @@ pipeline {
 					for (String item : build_file.split() ) {
 						env.project_file=item
 						echo "##### ${AppName}     ######################"
-						echo "##### ${component_name}     ######################"
+						echo "##### ${CompName}     ######################"
 						echo "##### ${BUILD_NUMBER}  ######################"
 						echo "##### ${WORKSPACE}     ######################"
 						echo "##### ${project_file}  ######################"
