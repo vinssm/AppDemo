@@ -3,5 +3,5 @@ App:
   App_name: NewSampleApplication
   Comp_name: WebApplication1
   solution_file: 'C:\Program Files (x86)\Jenkins\workspace\AppDemo\NewSampleApplication\WebApplication1\WebApplication1.sln'
-  project_file: 'C:\Program Files (x86)\Jenkins\workspace\AppDemo\NewSampleApplication\WebApplication1\WebApplication1.sln'
+  project_file: 'WebApplication1\WebApplication1.sln'
   
