@@ -175,7 +175,6 @@ C:\AppDemo\NewSampleApplication\WebApplication1\bin\System.Web.Razor.xml
 C:\AppDemo\NewSampleApplication\WebApplication1\bin\System.Web.WebPages.xml
 C:\AppDemo\NewSampleApplication\WebApplication1\bin\System.Web.WebPages.Deployment.xml
 C:\AppDemo\NewSampleApplication\WebApplication1\bin\System.Web.WebPages.Razor.xml
-C:\AppDemo\NewSampleApplication\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
 C:\AppDemo\NewSampleApplication\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
 C:\AppDemo\NewSampleApplication\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\AppDemo\NewSampleApplication\WebApplication1\obj\Debug\WebApplication1.dll
