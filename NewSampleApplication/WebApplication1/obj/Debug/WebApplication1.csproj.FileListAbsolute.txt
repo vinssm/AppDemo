@@ -101,7 +101,6 @@ C:\AppDemo\NewSampleApplication\WebApplication1\bin\roslyn\System.Reflection.Met
 C:\AppDemo\NewSampleApplication\WebApplication1\bin\roslyn\vbc.exe
 C:\AppDemo\NewSampleApplication\WebApplication1\bin\roslyn\VBCSCompiler.exe
 C:\AppDemo\NewSampleApplication\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
-C:\AppDemo\NewSampleApplication\WebApplication1\bin\WebApplication1.dll.config
 C:\AppDemo\NewSampleApplication\WebApplication1\bin\WebApplication1.dll
 C:\AppDemo\NewSampleApplication\WebApplication1\bin\WebApplication1.pdb
 C:\AppDemo\NewSampleApplication\WebApplication1\bin\Antlr3.Runtime.dll
